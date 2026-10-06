@@ -29,12 +29,26 @@ body {
 }
 
 .brand {
-  margin: 0 0 24px;
-  text-align: center;
-  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 0 0 20px;
+}
+
+.brand-logo {
+  width: 90px;
+  height: 90px;
+  display: block;
+}
+
+.brand-text {
+  font-size: 2.3rem;
   font-weight: 700;
   font-family: "Segoe Script", cursive;
   letter-spacing: 1px;
+  color: #111;
 }
 
 #loginForm {
@@ -128,5 +142,9 @@ input:focus {
   .login-box {
     padding-left: 22px;
     padding-right: 22px;
+  }
+
+  .brand-text {
+    font-size: 2rem;
   }
 }
